@@ -58,6 +58,17 @@ public class MainFrame extends JFrame {
 		});
 		btnExit.setBounds(365, 237, 113, 27);
 		getContentPane().add(btnExit);		
+		
+		JButton btnStrategy = new JButton("编辑销售策略");
+		btnStrategy.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				PricingStrategyScriptingDialog dialog=new PricingStrategyScriptingDialog();
+				dialog.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+				dialog.setVisible(true);
+			}
+		});
+		btnStrategy.setBounds(41, 239, 124, 23);
+		getContentPane().add(btnStrategy);
 	}
 	
 

@@ -29,7 +29,8 @@ public class Sale {
 	public Sale() {
 		lineItems=new ArrayList<SalesLineItem> ();
 		date = new Date(); 
-		pricingStrategy = PricingStrategyFactory.createPricingStrategy();
+		PricingStrategyFactory factory=PricingStrategyFactory.getInstance();
+		pricingStrategy = factory.createPricingStrategy();
 	}
 	/**
 	 * 输入新的购买商品
