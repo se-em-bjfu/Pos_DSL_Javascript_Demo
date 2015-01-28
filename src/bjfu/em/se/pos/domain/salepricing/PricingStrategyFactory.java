@@ -1,21 +1,34 @@
 package bjfu.em.se.pos.domain.salepricing;
 
+import java.io.IOException;
+import java.io.Reader;
+import java.io.Writer;
+
+import javax.script.ScriptContext;
 import javax.script.ScriptEngine;
 import javax.script.ScriptEngineManager;
 
 import bjfu.em.se.pos.domain.salepricing.dsl.JavascriptDSLPricingStrategy;
 
+/**
+ * 打折策略工厂类
+ * 
+ * @author Roy
+ *
+ */
 public final class PricingStrategyFactory {
 	private static PricingStrategyFactory instance=new PricingStrategyFactory();
 	
-	private final ScriptEngineManager engineManager=new ScriptEngineManager();
-	private final ScriptEngine scriptEngine=engineManager.getEngineByName("js");
+	private final ScriptEngineManager engineManager;
+	private final ScriptEngine scriptEngine;
 
 	private String name="无折扣";
 	private String description="无折扣";
 	private String script="var total=sale.preDiscountTotal;";
+	
 	/**
-	 * 轮流创建不同的定价策略实例
+	 * 创建的定价策略实例
+	 * 在本demo中，每次创建一个新的JavascriptDSLPricingStrategy实例
 	 * @return
 	 */
 	public ISalePricingStrategy createPricingStrategy() {
@@ -28,7 +41,9 @@ public final class PricingStrategyFactory {
 	}
 	
 	private PricingStrategyFactory(){
-		
+		//创建engineManager并获取Javascript引擎
+		engineManager=new ScriptEngineManager();
+		scriptEngine=engineManager.getEngineByName("js");	
 	}
 	
 	public static PricingStrategyFactory getInstance() {
