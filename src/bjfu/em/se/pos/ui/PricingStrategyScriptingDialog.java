@@ -66,25 +66,17 @@ public class PricingStrategyScriptingDialog extends JDialog {
 		scrollPane.setViewportView(txtScript);
 		
 		JButton btnSave = new JButton("保存");
-		btnSave.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				saveStrategy();
-			}
-		});
+		btnSave.addActionListener(this::saveStrategy);
 		btnSave.setBounds(321, 326, 93, 23);
 		getContentPane().add(btnSave);
 		
 		JButton btnExit = new JButton("退出");
-		btnExit.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				dispose();
-			}
-		});
+		btnExit.addActionListener(e->dispose());
 		btnExit.setBounds(424, 326, 93, 23);
 		getContentPane().add(btnExit);
 	}
 
-	protected void saveStrategy() {
+	protected void saveStrategy(ActionEvent e) {
 		PricingStrategyFactory factory=PricingStrategyFactory.getInstance();
 		factory.setName(txtName.getText());
 		factory.setDescription(txtDescription.getText());
