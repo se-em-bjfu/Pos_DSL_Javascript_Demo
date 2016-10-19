@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import bjfu.em.se.pos.domain.accounting.DemoKingdeeAccountingAdapter;
 import bjfu.em.se.pos.domain.accounting.DemoSAPAccountingAdapter;
 import bjfu.em.se.pos.domain.accounting.IAccountingAdapter;
 

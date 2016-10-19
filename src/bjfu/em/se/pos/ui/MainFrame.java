@@ -1,18 +1,17 @@
 package bjfu.em.se.pos.ui;
 
-import javax.swing.JFrame;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.WindowEvent;
+
 import javax.swing.JButton;
+import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.UIManager;
 
 import bjfu.em.se.pos.domain.ProductCatalog;
 import bjfu.em.se.pos.domain.Register;
 import bjfu.em.se.pos.domain.Store;
-import bjfu.em.se.pos.domain.accounting.DemoKingdeeAccountingAdapter;
-
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
-import java.awt.event.WindowEvent;
 
 
 public class MainFrame extends JFrame {

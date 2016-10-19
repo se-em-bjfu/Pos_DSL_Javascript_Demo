@@ -1,19 +1,16 @@
 package bjfu.em.se.pos.ui;
 
+import java.awt.Font;
+import java.awt.event.ActionEvent;
+
+import javax.swing.JButton;
 import javax.swing.JDialog;
 import javax.swing.JLabel;
-
-import java.awt.Font;
-
-import javax.swing.JTextField;
-import javax.swing.JTextArea;
 import javax.swing.JScrollPane;
-import javax.swing.JButton;
+import javax.swing.JTextArea;
+import javax.swing.JTextField;
 
 import bjfu.em.se.pos.domain.salepricing.PricingStrategyFactory;
-
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
 
 public class PricingStrategyScriptingDialog extends JDialog {
 	private JTextField txtName;

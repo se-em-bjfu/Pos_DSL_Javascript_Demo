@@ -1,27 +1,16 @@
 package bjfu.em.se.pos.ui;
 
+import java.awt.BorderLayout;
+import java.awt.Font;
+
+import javax.swing.JButton;
 import javax.swing.JDialog;
-import javax.swing.BoxLayout;
+import javax.swing.JLabel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
 
-import java.awt.Component;
-
-import javax.swing.JPanel;
-import javax.swing.JButton;
-
-import java.awt.BorderLayout;
-
-import javax.swing.JLabel;
-import javax.swing.table.DefaultTableColumnModel;
-import javax.swing.table.TableColumn;
-import javax.swing.table.TableColumnModel;
-
 import bjfu.em.se.pos.domain.Sale;
 import bjfu.em.se.pos.ui.model.SaleInfoTableModel;
-
-import java.awt.Font;
-import java.awt.Dialog.ModalityType;
 
 public class SaleInfoDialog extends JDialog {
 	private JTable tbLineItems;

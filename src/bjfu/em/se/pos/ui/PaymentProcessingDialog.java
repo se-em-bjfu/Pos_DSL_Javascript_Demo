@@ -1,28 +1,22 @@
 package bjfu.em.se.pos.ui;
 
-import javax.swing.JDialog;
-
-import java.awt.Dialog.ModalityType;
-
-import javax.swing.JLabel;
-
 import java.awt.Font;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.WindowEvent;
 
 import javax.swing.DefaultComboBoxModel;
-import javax.swing.JOptionPane;
-import javax.swing.SwingConstants;
-import javax.swing.JTextField;
+import javax.swing.JButton;
 import javax.swing.JComboBox;
+import javax.swing.JDialog;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JTextField;
+import javax.swing.SwingConstants;
 
 import bjfu.em.se.pos.domain.Register;
 import bjfu.em.se.pos.domain.accounting.AccountingException;
 import bjfu.em.se.pos.domain.payment.PaymentType;
-
-import javax.swing.JButton;
-
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
-import java.awt.event.WindowEvent;
 
 public class PaymentProcessingDialog extends JDialog {
 	private JTextField txtAmountTendered;

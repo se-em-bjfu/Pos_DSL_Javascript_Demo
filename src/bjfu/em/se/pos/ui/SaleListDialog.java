@@ -1,23 +1,18 @@
 package bjfu.em.se.pos.ui;
 
-import javax.swing.JDialog;
-import javax.swing.JLabel;
-
 import java.awt.BorderLayout;
-
-import javax.swing.JScrollPane;
-import javax.swing.JTable;
-import javax.swing.event.TableModelEvent;
-import javax.swing.event.TableModelListener;
-
-import bjfu.em.se.pos.domain.Sale;
-import bjfu.em.se.pos.ui.model.SaleListTableModel;
-
 import java.awt.Font;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
 import java.util.List;
+
+import javax.swing.JDialog;
+import javax.swing.JLabel;
+import javax.swing.JScrollPane;
+import javax.swing.JTable;
+
+import bjfu.em.se.pos.domain.Sale;
+import bjfu.em.se.pos.ui.model.SaleListTableModel;
 
 public class SaleListDialog extends JDialog {
 	private JTable tbSales;

@@ -1,10 +1,5 @@
 package bjfu.em.se.pos.domain.salepricing;
 
-import java.io.IOException;
-import java.io.Reader;
-import java.io.Writer;
-
-import javax.script.ScriptContext;
 import javax.script.ScriptEngine;
 import javax.script.ScriptEngineManager;
 

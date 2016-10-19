@@ -5,9 +5,6 @@ import java.util.Collections;
 import java.util.Date;
 import java.util.List;
 
-import bjfu.em.se.pos.domain.payment.CashPayment;
-import bjfu.em.se.pos.domain.payment.CheckPayment;
-import bjfu.em.se.pos.domain.payment.CreditCardPayment;
 import bjfu.em.se.pos.domain.payment.Payment;
 import bjfu.em.se.pos.domain.payment.PaymentFactory;
 import bjfu.em.se.pos.domain.payment.PaymentType;

@@ -1,24 +1,20 @@
 package bjfu.em.se.pos.ui;
 
-import javax.swing.JDialog;
-import javax.swing.JFrame;
+import java.awt.Font;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.WindowEvent;
+
 import javax.swing.JButton;
+import javax.swing.JDialog;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
-
-import java.awt.Font;
-
-import javax.swing.SwingConstants;
 import javax.swing.JTextField;
+import javax.swing.SwingConstants;
 
 import bjfu.em.se.pos.domain.ProductDescription;
 import bjfu.em.se.pos.domain.ProductNotFoundException;
 import bjfu.em.se.pos.domain.Register;
-
-import java.awt.Dialog.ModalityType;
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
-import java.awt.event.WindowEvent;
 
 public class SaleProcessingDialog extends JDialog{
 	private Register register;
